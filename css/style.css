@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Montserrat";
+  font-family: Montserrat;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -25,6 +25,20 @@ a {
   font-family: Oswald;
   font-size: 47px;
   line-height: 50px;
+  color: #382459;
+}
+
+.btn {
+  min-width: 225px;
+  min-height: 50px;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #fff;
+  background-color: rgba(255, 29, 192, 1);
+  border: 0;
+  border-radius: 50px;
 }
 
 /* ------------------------------------- */
@@ -34,6 +48,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
+  margin-bottom: 100px;
 }
 
 .header__inner {
@@ -84,4 +99,38 @@ a {
   letter-spacing: 0.05em;
   border-bottom: 1px dashed yellow;
   padding-bottom: 3px;
+}
+
+.nae {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.nae__button {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+}
+
+.nae__title {
+  margin-bottom: 125px;
+}
+  
+.nae__box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 100px;
+}
+
+.nae__box-item {
+  max-width: 415px;
+}
+
+.nae__item-title {
+  max-width: 265px;
+  font-size: 25px;
+  line-height: 32px;
+  color: #382459;
+  margin-top: 35px;
+  margin-bottom: 15px;
 }
