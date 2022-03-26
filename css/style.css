@@ -13,7 +13,7 @@ body {
 
 .container {
   max-width: 1400px;
-  padding: 0 20px;
+  padding: 0 120px;
 }
 
 a {
@@ -58,13 +58,18 @@ a {
   padding: 45px 0 0 0;
 }
 
+.header__logos {
+  position: relative;
+  left: -80px;
+}
+
 .header__logo {
   padding-right: 33px;
 }
 
 .header__contacts {
   position: absolute;
-  right: 20px;
+  right: 50px;
   top: 80px;
 }
 
@@ -110,7 +115,7 @@ a {
 .nae__button {
   position: absolute;
   top: 0px;
-  right: 20px;
+  right: 120px;
 }
 
 .nae__title {
@@ -120,11 +125,15 @@ a {
 .nae__box {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 100px;
+  grid-gap: 90px;
 }
 
 .nae__box-item {
   max-width: 415px;
+}
+
+.nae__box-item:last-child {
+  max-width: 370px;
 }
 
 .nae__item-title {
@@ -134,6 +143,21 @@ a {
   color: #382459;
   margin-top: 35px;
   margin-bottom: 15px;
+}
+
+.nae__box-item:last-child .nae__item-title {
+  max-width: 370px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.nae__item-description {
+  min-width: 410px;
+  min-height: 125px;
+}
+
+.nae__box-item:last-child .nae__item-description {
+  min-width: 350px;
 }
 
 .price {
@@ -154,6 +178,10 @@ a {
   color: #fff;
 }
 
+.price__box-item:nth-child(2) .price__item-title {
+  margin-left: -20px;
+}
+
 .price__item-title {
   font-size: 40px;
   line-height: 33px;
@@ -172,7 +200,7 @@ a {
 
 .price__image {
   position: absolute;
-  right: 20px;
+  right: 120px;
   top: 510px;
 }
 
@@ -192,7 +220,7 @@ a {
 }
 
 .tnk__box-item:nth-child(2) {
-  max-width: 320px;
+  min-width: 320px;
 }
 
 .tnk__box-item:last-child {
@@ -221,6 +249,7 @@ a {
 .directions__box {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-gap: 65px;
 }
 
 .directions__box-item {
@@ -229,11 +258,20 @@ a {
 }
 
 .directions__box-item:first-child {
+  max-width: 450px;
+}
+
+.directions__box-item:first-child li {
   max-width: 435px;
 }
 
 .directions__box-item:last-child {
-  max-width: 420px;
+  max-width: 430px;
+}
+
+.directions__box-item:last-child li {
+  max-width: 345px;
+  margin-top: -2px;
 }
 
 .directions__item-title {
@@ -273,7 +311,7 @@ a {
   position: absolute;
   z-index: -1;
   top: -60px;
-  right: 20px;
+  right: 120px;
 }
 
 .appeal {
@@ -290,6 +328,10 @@ a {
 
 .appeal__info {
   margin-top: 100px;
+}
+
+.appeal__image {
+  margin-top: -25px;
 }
 
 .appeal__title {
@@ -330,6 +372,7 @@ a {
 .footer__col-2 {
   font-weight: 700;
   color: #382459;
+  margin: 0 auto;
 }
 
 .footer__info {
@@ -339,7 +382,7 @@ a {
 
 .footer__col-3 {
   position: absolute;
-  right: 20px;
+  right: 80px;
 }
 
 .footer__image-3 {
