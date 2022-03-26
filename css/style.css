@@ -211,6 +211,8 @@ a {
 }
 
 .directions {
+  position: relative;
+  z-index: -2;
   background-color: #382459;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -269,6 +271,78 @@ a {
 
 .ius__image {
   position: absolute;
-  top: -100px;
+  z-index: -1;
+  top: -60px;
   right: 20px;
+}
+
+.appeal {
+  background-color: #382459;
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+
+.appeal__box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+}
+
+.appeal__info {
+  margin-top: 100px;
+}
+
+.appeal__title {
+  max-width: 400px;
+  font-size: 47px;
+  font-weight: 700;
+  line-height: 52px;
+  color: #30FFCD;
+  text-transform: uppercase;
+  padding-bottom: 25px;
+}
+
+.appeal__description {
+  max-width: 480px;
+  color: #fff;
+  padding-bottom: 45px;
+}
+
+.footer {
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+.footer__box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 110px;
+}
+
+.footer__col * {
+  display: block;
+}
+
+.footer__image-1 {
+  padding-bottom: 50px;
+}
+
+.footer__col-2 {
+  font-weight: 700;
+  color: #382459;
+}
+
+.footer__info {
+  padding-top: 45px;
+  font-weight: 500;
+}
+
+.footer__col-3 {
+  position: absolute;
+  right: 20px;
+}
+
+.footer__image-3 {
+  margin: 0 auto;
+  padding-bottom: 25px;
 }
